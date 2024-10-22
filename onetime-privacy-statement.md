@@ -2,7 +2,7 @@
 title: onetimesecret.com Privacy Statement
 ---
 
-Effective date: **June 15, 2024**
+Effective date: **October 22, 2024**
 
 Thanks for entrusting onetimesecret.com with your secrets. Holding onto your private information is a serious responsibility, and we want you to know how we're handling it.
 

@@ -26,7 +26,7 @@ Thank you for using onetimesecret.com! We're happy you're here. Please read this
 | [P. Miscellaneous](#p-miscellaneous) | Please see this section for legal details including our choice of law. |
 
 ### The onetimesecret.com Terms of Service
-Effective date: March 27, 2024
+Effective date: October 22, 2024
 
 ### A. Definitions
 **Short version:** *We use these basic terms throughout the agreement, and they have specific meanings. You should know what we mean when we use each of the terms. There's not going to be a test on it, but it's still useful information.*
