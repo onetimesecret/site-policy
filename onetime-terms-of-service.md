@@ -26,18 +26,17 @@ Thank you for using onetimesecret.com! We're happy you're here. Please read this
 | [P. Miscellaneous](#p-miscellaneous) | Please see this section for legal details including our choice of law. |
 
 ### The onetimesecret.com Terms of Service
-Effective date: March 27, 2018
-
+Effective date: March 27, 2024
 
 ### A. Definitions
 **Short version:** *We use these basic terms throughout the agreement, and they have specific meanings. You should know what we mean when we use each of the terms. There's not going to be a test on it, but it's still useful information.*
 
-1. The “Agreement” refers, collectively, to all the terms, conditions, notices contained or referenced in this document (the “Terms of Service” or the "Terms") and all other operating rules, policies (including the onetimesecret.com Privacy Statement, available at [onetimesecret.com/docs/privacy/](https://onetimesecret.com/site/privacy)) and procedures that we may publish from time to time on the Website.
-2. The “Service” refers to the applications, software, products, and services provided by onetimesecret.com.
-3. The “Website” refers to onetimesecret.com’s website located at [onetimesecret.com](https://onetimesecret.com/), and all content, services, and products provided by onetimesecret.com at or through the Website. It also refers to onetimesecret.com-owned subdomains of onetimesecret.com, such as [app.onetimesecret.com](https://app.onetimesecret.com/). These Terms also govern onetimesecret.com’s product websites, such as [onehostname.com](https://onehostname.com/). Occasionally, websites owned by onetimesecret.com may provide different or additional terms of service. If those additional terms conflict with this Agreement, the more specific terms apply to the relevant page or service.
-4. “The User,” “You,” and “Your” refer to the individual person, company, or organization that has visited or is using the Website or Service; that accesses or uses any part of the account; or that directs the use of the account in the performance of its functions. A User must be at least 13 years of age.
-5. “onetimesecret.com,” “We,” and “Us” refer to onetimesecret.com, as well as our affiliates, directors, subsidiaries, contractors, licensors, officers, agents, and employees.
-6. “Content” refers to content featured or displayed through the Website, including without limitation text, data, articles, images, photographs, graphics, software, applications, designs, features, and other materials that are available on the Website or otherwise available through the Service. "Content" also includes Services. “User-Generated Content” is Content, written or otherwise, created or uploaded by our Users. "Your Content" is Content that you create or own.
+1. The "Agreement" refers, collectively, to all the terms, conditions, notices contained or referenced in this document (the "Terms of Service" or the "Terms") and all other operating rules, policies (including the onetimesecret.com Privacy Statement, available at [onetimesecret.com/docs/privacy/](https://onetimesecret.com/site/privacy)) and procedures that we may publish from time to time on the Website.
+2. The "Service" refers to the applications, software, products, and services provided by onetimesecret.com.
+3. The "Website" refers to onetimesecret.com's website located at [onetimesecret.com](https://onetimesecret.com/), and all content, services, and products provided by onetimesecret.com at or through the Website. It also refers to onetimesecret.com-owned subdomains of onetimesecret.com, such as eu.onetimesecret.com and us.onetimesecret.com, which represent our European Union and United States data centers respectively. These Terms also govern onetimesecret.com's product websites, such as [onetime.co](https://onetime.co/) and [onetime.dev](https://onetime.dev/). Occasionally, websites owned by onetimesecret.com may provide different or additional terms of service. If those additional terms conflict with this Agreement, the more specific terms apply to the relevant page or service.
+4. "The User", "You", and "Your" refer to the individual person, company, or organization that has visited or is using the Website or Service; that accesses or uses any part of the account; or that directs the use of the account in the performance of its functions. A User must be at least 13 years of age.
+5. "onetimesecret.com", "We", and "Us" refer to onetimesecret.com, as well as our affiliates, directors, subsidiaries, contractors, licensors, officers, agents, and employees.
+6. "Content" refers to content featured or displayed through the Website, including without limitation text, data, articles, images, photographs, graphics, software, applications, designs, features, and other materials that are available on the Website or otherwise available through the Service. "Content" also includes Services. "User-Generated Content" is Content, written or otherwise, created or uploaded by our Users. "Your Content" is Content that you create or own.
 
 ### B. Account Terms
 **Short version:** *A human must create your account; you must be 13 or over; you must provide a valid email address; and you may not have more than one trial account. You alone are responsible for your account and anything that happens while you are signed in to or using your account. You are responsible for keeping your account secure.*
@@ -45,13 +44,15 @@ Effective date: March 27, 2018
 #### 1. Required Information
 You must provide a valid email address in order to complete the signup process. Any other information requested, such as your real name, is optional, unless you are accepting these terms on behalf of a legal entity (in which case we need more information about the legal entity) or if you opt for a [paid account](#i-payment), in which case additional information will be necessary for billing purposes.
 
+When creating an account, you will be asked to select your preferred data center region (European Union or United States). This selection determines where your data will be stored and processed. You can access your account through eu.onetimesecret.com or us.onetimesecret.com based on your selected region.
+
 #### 2. Account Requirements
 We have a few simple rules for accounts on onetimesecret.com's Service.
 - You must be a human to create an account. Accounts registered by "bots" or other automated methods are not permitted. We do permit machine accounts:
 - A machine account is an account set up by an individual human who accepts the Terms on behalf of the account, provides a valid email address, and is responsible for its actions. A machine account is used exclusively for performing automated tasks. Multiple users may direct the actions of a machine account, but the owner of the account is ultimately responsible for the **machine's actions. You may maintain no more than one free machine account in addition to your free personal account**. !!
 -
 - One person or legal entity may maintain more than one free account.
-- You must be age 13 or older. onetimesecret.com does not target our Service to children under 13, and we do not permit any Users under 13 on our Service. If we learn of any User under the age of 13, we will [terminate that User’s account immediately](#j-cancellation-and-termination). If you are a resident of a country outside the United States, your country’s minimum age may be older; in such a case, you are responsible for complying with your country’s laws.
+- You must be age 13 or older. onetimesecret.com does not target our Service to children under 13, and we do not permit any Users under 13 on our Service. If we learn of any User under the age of 13, we will [terminate that User's account immediately](#j-cancellation-and-termination). If you are a resident of a country outside the United States, your country's minimum age may be older; in such a case, you are responsible for complying with your country's laws.
 - Your login may only be used by one person — i.e., a single login may not be shared by multiple people. A paid organization account may create separate logins for as many users as its subscription allows.
 - Overall, the number of Users must not exceed the number of accounts you've ordered from us.
 
@@ -245,7 +246,9 @@ onetimesecret.com only offers support via email, in-Service communications, and 
 ### L. Disclaimer of Warranties
 **Short version:** *We provide our service as is, and we make no promises or guarantees about this service. Please read this section carefully; you should understand what to expect.*
 
-onetimesecret.com provides the Website and the Service “as is” and “as available,” without warranty of any kind. Without limiting this, we expressly disclaim all warranties, whether express, implied or statutory, regarding the Website and the Service including without limitation any warranty of merchantability, fitness for a particular purpose, title, security, accuracy and non-infringement.
+onetimesecret.com provides the Website and the Service "as is" and "as available," without warranty of any kind. Without limiting this, we expressly disclaim all warranties, whether express, implied or statutory, regarding the Website and the Service including without limitation any warranty of merchantability, fitness for a particular purpose, title, security, accuracy and non-infringement.
+
+To protect against denial-of-service attacks and ensure service availability, we utilize CloudFlare's services for DDoS protection and content delivery. All traffic to onetimesecret.com and its subdomains (including eu.onetimesecret.com and us.onetimesecret.com) passes through CloudFlare's infrastructure by default. Users on our Global Elite plan have the option to bypass CloudFlare if requested, though this may impact service availability during attacks.
 
 onetimesecret.com does not warrant that the Service will meet your requirements; that the Service will be uninterrupted, timely, secure, or error-free; that the information provided through the Service is accurate, reliable or correct; that any defects or errors will be corrected; that the Service will be available at any particular time or location; or that the Service is free of viruses or other harmful components. You assume full responsibility and risk of loss resulting from your downloading and/or use of files, information, content or other material obtained from the Service.
 
