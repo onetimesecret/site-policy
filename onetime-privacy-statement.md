@@ -1,5 +1,5 @@
 ---
-title: onetimesecret.com Privacy Statement
+title: Privacy Statement
 ---
 
 Effective date: **October 22, 2024**
