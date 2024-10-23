@@ -53,9 +53,23 @@ We have a few simple rules for accounts on onetimesecret.com's Service.
 - You may not maintain more than one free personal account.
 - You must be age 13 or older. onetimesecret.com does not target our Service to children under 13, and we do not permit any Users under 13 on our Service. If we learn of any User under the age of 13, we will [terminate that User's account immediately](#j-cancellation-and-termination). If you are a resident of a country outside the United States, your country's minimum age may be older; in such a case, you are responsible for complying with your country's laws.
 - Your login is intended for individual use and should not be shared among multiple people. This ensures secure use of our services and proper delivery of account-specific features. Paid organization accounts can request additional user accounts be associated with their custom domain(s). The number of separate logins allowed is determined by the subscription level. These additional accounts can be used by multiple people (like a team) with the understanding that all users of the shared account will have the same access to information within that account.
-
-
 - Overall, the number of Users must not exceed the number of accounts you've ordered from us.
+
+#### 2.1 Data Retention and Security
+
+We take your privacy and security seriously. The following policies govern how we handle your data:
+
+- IP Address Retention: We retain IP addresses associated with service usage for a maximum of 30 days, after which they are permanently deleted from our systems.
+
+- Secret Retrieval: Due to our security-first design, it is not possible for us to retrieve or recover secrets once they have been accessed or expired, except as outlined regarding backups. This ensures that your sensitive information remains truly private and temporary.
+
+- Backups: We maintain encrypted backups of our databases for disaster recovery purposes. These backups are retained for a maximum of 14 days, after which they are permanently deleted on a rolling basis. When a secret is received or expires, it is immediately removed from the database. However, encrypted secrets can still exist in backups after they have been deleted from the database. These backups are stored in a secure, isolated environment and are only accessible by authorized personnel. We access backup files in only two scenarios:
+  1. To restore service in the event of a catastrophic failure
+  2. To test the integrity of the backups for the whole system
+
+  We do not access backup files to retrieve individual secrets.
+
+
 
 #### 3. User Account Security
 You are responsible for keeping your account secure while you use our Service. We offer tools such as two-factor authentication to help you maintain your account's security, but the content of your account and its security are up to you.
@@ -140,6 +154,15 @@ You retain all moral rights to Your Content that you upload, publish, or submit 
 
 To the extent this agreement is not enforceable by applicable law, you grant onetimesecret.com the rights we need to use Your Content without attribution and to make reasonable adaptations of Your Content as necessary to render the Website and provide the Service.
 
+#### 7. Feedback
+- Feedback is kept confidential and not shared with other Users or third parties. We use Feedback to improve our Services and provide better features. We treat all feedback like email communication. For example, we may delete feedback from our system after we have reviewed it, but it may still be stored in our backups or email archives.
+- We do not reply to all feedback, but we do read it. For non-authenticated accounts, unless you provide an email address, we have no way to contact you about your feedback. For authenticated accounts, we may reply to your feedback using the email address associated with your account.
+- Similar Features: We may be developing features similar to the ones you suggest through Feedback, or may decide to do so in the future. By submitting Feedback, you acknowledge and agree that:
+  1. We may have similar features under development or may develop them in the future;
+  2. We have no obligation to inform you of such similar features;
+  3. We are free to use our own similar ideas, features, or functionality without any obligation to you.
+
+
 ### E. Applications
 **Short version:** *You may have access to applications. We treat the content of applications as confidential, and we only access it for support reasons, with your consent, or if required to for security reasons.*
 
@@ -159,7 +182,7 @@ You may choose to enable additional access to your applications. For example:
 - You may also grant a third-party application authorization to use, access, and disclose the contents of your applications. Your use of third-party applications is at your sole risk; onetimesecret.com is not liable for disclosures to third parties that you authorize to access a private application.
 
 #### 4. Exclusions.
-If we have reason to believe the contents of an application are in violation of the law or of these Terms, we have the right to access, review, and remove them. Additionally, we may be [compelled by law](/legal/privacy-policy/#how-we-respond-to-compelled-disclosure) to disclose the contents of your applications.
+If we have reason to believe the contents of an application are in violation of the law or of these Terms, we have the right to access, review, and remove them. Additionally, we may be [compelled by law](/info/privacy/#how-we-respond-to-compelled-disclosure) to disclose the contents of your applications.
 
 ### F. Copyright Infringement and DMCA Policy
 If you believe that content on our website violates your copyright, please contact us by emailing support@onetimesecret.com. If you are a copyright owner and you believe that content on onetimesecret.com violates your rights, please contact us. There may be legal consequences for sending a false or frivolous takedown notice. Before sending a takedown request, you must consider legal uses such as fair use and licensed uses.
@@ -172,8 +195,20 @@ We will terminate the accounts of [repeat infringers](#e-repeated-infringement) 
 #### 1. onetimesecret.com's Rights to Content
 onetimesecret.com and our licensors, vendors, agents, and/or our content providers retain ownership of all intellectual property rights of any kind related to the Website and Service. We reserve all rights that are not expressly granted to you under this Agreement or by law. The look and feel of the Website and Service is copyright © onetimesecret.com. All rights reserved. You may not duplicate, copy, or reuse any portion of the HTML/CSS, Javascript, or visual design elements or concepts without express written permission from onetimesecret.com.
 
+
 #### 2. onetimesecret.com Trademarks and Logos
-If you'd like to use onetimesecret.com's trademarks, you must follow all of our trademark guidelines, including those on our logos page: https://github.com/onetimesecret/onetimesecret/tree/develop/public/web.
+
+The following variations of our name and logo are protected trademarks of onetimesecret.com:
+
+- "Onetime Secret"
+- "OnetimeSecret"
+- "OneTime Secret"
+- "OneTimeSecret"
+- "Onetime.co"
+- "Onetime.dev"
+
+Use of any of our trademarks must adhere to our trademark guidelines. Any use that may cause confusion among customers or that disparages or discredits onetimesecret.com is prohibited. All other trademarks, product names, company names, and logos mentioned on the Website are the property of their respective owners. Reference to any products, services, processes, or other information by trade name, trademark, manufacturer, supplier, or otherwise does not constitute or imply endorsement, sponsorship, or recommendation by onetimesecret.com.
+
 
 #### 3. License to onetimesecret.com Policies
 This Agreement is licensed under this [Creative Commons Zero license](https://creativecommons.org/publicdomain/zero/1.0/). For details, see our [site-policy repository](https://github.com/onetimesecret/site-policy).
@@ -186,7 +221,7 @@ Abuse or excessively frequent requests to onetimesecret.com via the API may resu
 
 You may not share API tokens to exceed onetimesecret.com's rate limitations.
 
-All use of the onetimesecret.com API is subject to these Terms of Service and the [onetimesecret.com Privacy Statement](https://onetimesecret.com/legal/privacy-policy/).
+All use of the onetimesecret.com API is subject to these Terms of Service and the [onetimesecret.com Privacy Statement](https://onetimesecret.com/info/privacy/).
 
 onetimesecret.com may offer subscription-based access to our API for those Users who require high-throughput access or access that would result in resale of onetimesecret.com's Service.
 
@@ -212,6 +247,12 @@ By agreeing to these Terms, you are giving us permission to charge your on-file 
 #### 5. Responsibility for Payment
 You are responsible for all fees, including taxes, associated with your use of the Service. By using the Service, you agree to pay onetimesecret.com any charge incurred in connection with your use of the Service.  If you dispute the matter, contact [onetimesecret.com Support](https://onetimesecret.com/docs/support/). You are responsible for providing us with a valid means of payment for paid accounts.
 
+#### 6. Payment Processing
+- Payment Processing Service: We use Stripe.com as our payment processor. When you provide your payment information, you are providing it directly to Stripe.com, which operates under its own privacy policy and terms of service.
+- Monthly Billing Cycle: We bill monthly based on the day you first signed up for a paid account. Your "billing day" is the day of the month that your first payment was processed. If you change your plan, your billing day will reset to the day of the month that you made the change.
+- Credit Card Information: We do not store your complete credit card information on our servers. This information is securely stored by Stripe.com in accordance with PCI compliance standards. We only retain a payment token that allows us to process recurring charges to your card.
+
+-
 ### J. Cancellation and Termination
 **Short version:** *You may close your account at any time. If you do, we'll treat your information responsibly.*
 
@@ -274,19 +315,22 @@ If you have a dispute with one or more Users, you agree to release onetimesecret
 You agree to indemnify us, defend us, and hold us harmless from and against any and all claims, liabilities, and expenses, including attorneys' fees, arising out of your use of the Website and the Service, including but not limited to your violation of this Agreement, provided that onetimesecret.com (1) promptly gives you written notice of the claim, demand, suit or proceeding; (2) gives you sole control of the defense and settlement of the claim, demand, suit or proceeding (provided that you may not settle any claim, demand, suit or proceeding unless the settlement unconditionally releases onetimesecret.com of all liability); and (3) provides to you all reasonable assistance, at your expense.
 
 ### O. Changes to These Terms
-**Short version:** *We want our users to be informed of important changes to our terms, but some changes aren't that important — we don't want to bother you every time we fix a typo. So while we may modify this agreement at any time, we will notify users of any changes that affect your rights and give you time to adjust to them.*
+**Short version:** *We want our users to be informed of changes to our terms, but some changes aren't that important — we don't want to bother you every time we fix a typo. So while we may modify this agreement at any time, we will notify users of any substantial changes by email or by posting a prominent notice on our pages. If you continue to use the Website after any amendments are posted, you will be deemed to have accepted the changes.*
 
-We reserve the right, at our sole discretion, to amend these Terms of Service at any time and will update these Terms of Service in the event of any such amendments. We will notify our Users of material changes to this Agreement, such as price changes, at least 30 days prior to the change taking effect by posting a notice on our Website. For non-material modifications, your continued use of the Website constitutes agreement to our revisions of these Terms of Service.
 
-We reserve the right at any time and from time to time to modify or discontinue, temporarily or permanently, the Website (or any part of it) with or without notice.
+We may modify these Terms of Use from time to time and will post a copy of the amended Terms on the Website. We encourage you to review them periodically. If we make any substantial changes to the Terms of Use, we will notify you by sending a notice to the email address associated with your account or by posting a prominent notice on our pages. If you do not agree to, or cannot comply with, the amended Terms of Use, you are not authorized to use the Website. Your continued use of the Website after any amendments are posted will be deemed acceptance of the amended Terms of Use.
+
+We reserve the right to refuse our Services to anyone at any time. Additionally, we reserve the right to modify or discontinue, temporarily or permanently, the Website (or any part of it) at any time, with or without notice.
+
 
 ### P. Miscellaneous
 
 #### 1. Governing Law
-Except to the extent applicable law provides otherwise, this Agreement between you and onetimesecret.com and any access to or use of the Website or the Service are governed by the federal laws of the United States of America and the laws of the State of California, without regard to conflict of law provisions. You and onetimesecret.com agree to submit to the exclusive jurisdiction and venue of the courts located in the City and County of San Francisco, California.
+Except to the extent applicable law provides otherwise, this Agreement between you and onetimesecret.com, as well as any access to or use of the Website or the Service, are governed by the laws of the Province of British Columbia, Canada. You and onetimesecret.com agree to submit to the exclusive jurisdiction and venue of the courts located in Vancouver, British Columbia. This Agreement expressly excludes any rules of private international law or the conflict of laws that would lead to the application of any other laws.
+
 
 #### 2. Non-Assignability
-onetimesecret.com may assign or delegate these Terms of Service and/or the [onetimesecret.com Privacy Statement](https://onetimesecret.com/legal/privacy-policy/), in whole or in part, to any person or entity at any time with or without your consent, including the license grant in Section D.4. You may not assign or delegate any rights or obligations under the Terms of Service or Privacy Statement without our prior written consent, and any unauthorized assignment and delegation by you is void.
+onetimesecret.com may assign or delegate these Terms of Service and/or the [onetimesecret.com Privacy Statement](https://onetimesecret.com/info/privacy/), in whole or in part, to any person or entity at any time with or without your consent, including the license grant in Section D.4. You may not assign or delegate any rights or obligations under the Terms of Service or Privacy Statement without our prior written consent, and any unauthorized assignment and delegation by you is void.
 
 #### 3. Section Headings and Summaries
 Throughout this Agreement, each section includes titles and brief summaries of the following terms and conditions. These section titles and brief summaries are not legally binding.
@@ -298,4 +342,4 @@ If any part of this Agreement is held invalid or unenforceable, that portion of 
 This Agreement may only be modified by a written amendment signed by an authorized representative of onetimesecret.com, or by the posting by onetimesecret.com of a revised version in accordance with [Section O. Changes to These Terms](#o-changes-to-these-terms). These Terms of Service, together with the onetimesecret.com Privacy Statement, represent the complete and exclusive statement of the agreement between you and us. This Agreement supersedes any proposal or prior agreement oral or written, and any other communications between you and onetimesecret.com relating to the subject matter of these terms including any confidentiality or nondisclosure agreements.
 
 #### 6. Questions
-Questions about the Terms of Service? [Contact us](https://onetimesecret.com/docs/support/).
+Questions about the Terms of Service? [Contact us](https://onetimesecret.com/feedback/).
