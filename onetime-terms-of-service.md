@@ -33,7 +33,7 @@ Effective date: October 22, 2024
 
 1. The "Agreement" refers, collectively, to all the terms, conditions, notices contained or referenced in this document (the "Terms of Service" or the "Terms") and all other operating rules, policies (including the onetimesecret.com Privacy Statement, available at [onetimesecret.com/docs/privacy/](https://onetimesecret.com/site/privacy)) and procedures that we may publish from time to time on the Website.
 2. The "Service" refers to the applications, software, products, and services provided by onetimesecret.com.
-3. The "Website" refers to onetimesecret.com's website located at [onetimesecret.com](https://onetimesecret.com/), and all content, services, and products provided by onetimesecret.com at or through the Website. It also refers to onetimesecret.com-owned subdomains of onetimesecret.com, such as eu.onetimesecret.com and us.onetimesecret.com, which represent our European Union and United States data centers respectively. These Terms also govern onetimesecret.com's product websites, such as [onetime.co](https://onetime.co/) and [onetime.dev](https://onetime.dev/). Occasionally, websites owned by onetimesecret.com may provide different or additional terms of service. If those additional terms conflict with this Agreement, the more specific terms apply to the relevant page or service.
+3. The "Website" refers to onetimesecret.com's website located at [onetimesecret.com](https://onetimesecret.com/), and all content, services, and products provided by onetimesecret.com at or through the Website. It also refers to onetimesecret.com-owned subdomains of onetimesecret.com, such as eu.onetimesecret.com and us.onetimesecret.com, which represent our European Union and United States data centers respectively. To protect against denial-of-service attacks and ensure service availability, we utilize CloudFlare's services for DDoS protection and content delivery. All traffic to onetimesecret.com and its subdomains (including eu.onetimesecret.com and us.onetimesecret.com) passes through CloudFlare's infrastructure by default. Users on our Global Elite plan have the option to bypass CloudFlare if requested, though this may impact service availability during attacks. These Terms also govern onetimesecret.com's product websites, such as [onetime.co](https://onetime.co/) and [onetime.dev](https://onetime.dev/). Occasionally, websites owned by onetimesecret.com may provide different or additional terms of service. If those additional terms conflict with this Agreement, the more specific terms apply to the relevant page or service.
 4. "The User", "You", and "Your" refer to the individual person, company, or organization that has visited or is using the Website or Service; that accesses or uses any part of the account; or that directs the use of the account in the performance of its functions. A User must be at least 13 years of age.
 5. "onetimesecret.com", "We", and "Us" refer to onetimesecret.com, as well as our affiliates, directors, subsidiaries, contractors, licensors, officers, agents, and employees.
 6. "Content" refers to content featured or displayed through the Website, including without limitation text, data, articles, images, photographs, graphics, software, applications, designs, features, and other materials that are available on the Website or otherwise available through the Service. "Content" also includes Services. "User-Generated Content" is Content, written or otherwise, created or uploaded by our Users. "Your Content" is Content that you create or own.
@@ -49,11 +49,12 @@ When creating an account, you will be asked to select your preferred data center
 #### 2. Account Requirements
 We have a few simple rules for accounts on onetimesecret.com's Service.
 - You must be a human to create an account. Accounts registered by "bots" or other automated methods are not permitted. We do permit machine accounts:
-- A machine account is an account set up by an individual human who accepts the Terms on behalf of the account, provides a valid email address, and is responsible for its actions. A machine account is used exclusively for performing automated tasks. Multiple users may direct the actions of a machine account, but the owner of the account is ultimately responsible for the **machine's actions. You may maintain no more than one free machine account in addition to your free personal account**. !!
--
-- One person or legal entity may maintain more than one free account.
+- A machine account is an account set up by an individual human who accepts the Terms on behalf of the account, provides a valid email address, and is responsible for its actions. A machine account is used exclusively for performing automated tasks. Multiple users may direct the actions of a machine account, but the owner of the account is ultimately responsible for the machine's actions. You may maintain no more than one free machine account.
+- You may not maintain more than one free personal account.
 - You must be age 13 or older. onetimesecret.com does not target our Service to children under 13, and we do not permit any Users under 13 on our Service. If we learn of any User under the age of 13, we will [terminate that User's account immediately](#j-cancellation-and-termination). If you are a resident of a country outside the United States, your country's minimum age may be older; in such a case, you are responsible for complying with your country's laws.
-- Your login may only be used by one person — i.e., a single login may not be shared by multiple people. A paid organization account may create separate logins for as many users as its subscription allows.
+- Your login is intended for individual use and should not be shared among multiple people. This ensures secure use of our services and proper delivery of account-specific features. Paid organization accounts can request additional user accounts be associated with their custom domain(s). The number of separate logins allowed is determined by the subscription level. These additional accounts can be used by multiple people (like a team) with the understanding that all users of the shared account will have the same access to information within that account.
+
+
 - Overall, the number of Users must not exceed the number of accounts you've ordered from us.
 
 #### 3. User Account Security
@@ -107,7 +108,7 @@ Misuse of onetimesecret.com Users' Personal Information is prohibited.
 Any person, entity, or service collecting data from onetimesecret.com must comply with the [onetimesecret.com Privacy Statement](https://onetimesecret.com/site/privacy/), particularly in regards to the collection of our Users' Personal Information (as defined in the onetimesecret.com Privacy Statement). If you collect any onetimesecret.com User's Personal Information from onetimesecret.com, you agree that you will only use the Personal Information you gather for the purpose for which our User has authorized it. You agree that you will reasonably secure any Personal Information you have gathered from onetimesecret.com, and you will respond promptly to complaints, removal requests, and "do not contact" requests from onetimesecret.com or onetimesecret.com Users.
 
 #### 7. Excessive Use on Free Services
-_For free onetimesecret.com services:_ If we determine your usage on to be significantly excessive in relation to other onetimesecret.com customers, we reserve the right to suspend your account or throttle your service until you can reduce your bandwidth consumption.
+_For free onetimesecret.com services:_ If we determine your usage to be significantly excessive in relation to other onetimesecret.com customers, we reserve the right to suspend your account or throttle your service until you can reduce your bandwidth consumption.
 
 #### 8. User Protection
 You agree not to engage in activity that significantly harms our Users. We will resolve disputes in favor of protecting our Users as a whole.
@@ -132,7 +133,7 @@ We need the legal right to do things like host Your Content, publish it, and sha
 This license does not grant onetimesecret.com the right to sell Your Content or otherwise distribute or use it outside of our provision of the Service.
 
 #### 5. License Grant to Other Users
-By adding a collaborator to your Application, or to an Organization, you hereby grant to that user a non-exclusive, royalty-free, non-transferable license, with no right to sub-license, to use, display, perform, reproduce, modify, publish, distribute, list information regarding, edit, translate and analyze such Application(s) and Content as permitted by the relevant onetimesecret.com Services functionality or features for the sole purpose of collaborating on development of the Application(s).
+Any Content you share with other users through the Service may be viewed, copied, and used by those users for collaboration purposes. You hereby grant to other users a non-exclusive, royalty-free, non-transferable license, with no right to sub-license, to use, display, perform, reproduce, modify, publish, distribute, list information regarding, edit, translate and analyze such Content as permitted by the relevant onetimesecret.com Services functionality or features for the sole purpose of collaboration.
 
 #### 6. Moral Rights
 You retain all moral rights to Your Content that you upload, publish, or submit to any part of the Service, including the rights of integrity and attribution. However, you waive these rights and agree not to assert them against us, to enable us to reasonably exercise the rights granted in Section D.4, but not otherwise.
@@ -146,11 +147,11 @@ To the extent this agreement is not enforceable by applicable law, you grant one
 Accounts may have applications, which allow the User to control access to Content.
 
 #### 2. Confidentiality of Applications.
-onetimesecret.com considers the contents of private repositories to be confidential to you. onetimesecret.com will protect the contents of private repositories from unauthorized use, access, or disclosure in the same manner that we would use to protect our own confidential information of a similar nature and in no event with less than a reasonable degree of care.
+onetimesecret.com considers the contents of private applications to be confidential to you. onetimesecret.com will protect the contents of private applications from unauthorized use, access, or disclosure in the same manner that we would use to protect our own confidential information of a similar nature and in no event with less than a reasonable degree of care.
 
 #### 3. Access.
-onetimesecret.com employees may only access the content of your private repositories in the following situations:
-- With your consent and knowledge, for support reasons. If onetimesecret.com accesses an application for support reasons, we will only do so with the owner’s consent and knowledge.
+onetimesecret.com employees may only access the content of your private applications in the following situations:
+- With your consent and knowledge, for support reasons. If onetimesecret.com accesses an application for support reasons, we will only do so with the owner's consent and knowledge.
 - When access is required for security reasons.
 
 You may choose to enable additional access to your applications. For example:
@@ -161,9 +162,9 @@ You may choose to enable additional access to your applications. For example:
 If we have reason to believe the contents of an application are in violation of the law or of these Terms, we have the right to access, review, and remove them. Additionally, we may be [compelled by law](/legal/privacy-policy/#how-we-respond-to-compelled-disclosure) to disclose the contents of your applications.
 
 ### F. Copyright Infringement and DMCA Policy
-If you believe that content on our website violates your copyright, please contact us in accordance with our [Digital Millennium Copyright Act Policy](/legal/dmca-takedown-policy/). If you are a copyright owner and you believe that content on onetimesecret.com violates your rights, please contact us by emailing support@onetimesecret.com. There may be legal consequences for sending a false or frivolous takedown notice. Before sending a takedown request, you must consider legal uses such as fair use and licensed uses.
+If you believe that content on our website violates your copyright, please contact us by emailing support@onetimesecret.com. If you are a copyright owner and you believe that content on onetimesecret.com violates your rights, please contact us. There may be legal consequences for sending a false or frivolous takedown notice. Before sending a takedown request, you must consider legal uses such as fair use and licensed uses.
 
-We will terminate the accounts of [repeat infringers](/legal/dmca-takedown-policy/#e-repeated-infringement) of this policy.
+We will terminate the accounts of [repeat infringers](#e-repeated-infringement) of this policy.
 
 ### G. Intellectual Property Notice
 **Short version:** *We own the service and all of our content. In order for you to use our content, we give you certain rights to it, but you may only use our content in the way we have allowed.*
@@ -172,10 +173,10 @@ We will terminate the accounts of [repeat infringers](/legal/dmca-takedown-polic
 onetimesecret.com and our licensors, vendors, agents, and/or our content providers retain ownership of all intellectual property rights of any kind related to the Website and Service. We reserve all rights that are not expressly granted to you under this Agreement or by law. The look and feel of the Website and Service is copyright © onetimesecret.com. All rights reserved. You may not duplicate, copy, or reuse any portion of the HTML/CSS, Javascript, or visual design elements or concepts without express written permission from onetimesecret.com.
 
 #### 2. onetimesecret.com Trademarks and Logos
-If you’d like to use onetimesecret.com’s trademarks, you must follow all of our trademark guidelines, including those on our logos page: https://onetimesecret.com/logos.
+If you'd like to use onetimesecret.com's trademarks, you must follow all of our trademark guidelines, including those on our logos page: https://github.com/onetimesecret/onetimesecret/tree/develop/public/web.
 
 #### 3. License to onetimesecret.com Policies
-This Agreement is licensed under this [Creative Commons Zero license](https://creativecommons.org/publicdomain/zero/1.0/). For details, see our [site-policy repository](https://github.com/onetimesecret/site-policy/blob/master/LICENSE.md).
+This Agreement is licensed under this [Creative Commons Zero license](https://creativecommons.org/publicdomain/zero/1.0/). For details, see our [site-policy repository](https://github.com/onetimesecret/site-policy).
 
 ### H. API Terms
 **Short version:** *You agree to these Terms of Service, plus this Section H, when using any of onetimesecret.com's APIs (Application Programming Interface), including use of the API through a third party product that accesses onetimesecret.com.*
@@ -210,7 +211,6 @@ By agreeing to these Terms, you are giving us permission to charge your on-file 
 
 #### 5. Responsibility for Payment
 You are responsible for all fees, including taxes, associated with your use of the Service. By using the Service, you agree to pay onetimesecret.com any charge incurred in connection with your use of the Service.  If you dispute the matter, contact [onetimesecret.com Support](https://onetimesecret.com/docs/support/). You are responsible for providing us with a valid means of payment for paid accounts.
-
 
 ### J. Cancellation and Termination
 **Short version:** *You may close your account at any time. If you do, we'll treat your information responsibly.*
@@ -248,8 +248,6 @@ onetimesecret.com only offers support via email, in-Service communications, and 
 
 onetimesecret.com provides the Website and the Service "as is" and "as available," without warranty of any kind. Without limiting this, we expressly disclaim all warranties, whether express, implied or statutory, regarding the Website and the Service including without limitation any warranty of merchantability, fitness for a particular purpose, title, security, accuracy and non-infringement.
 
-To protect against denial-of-service attacks and ensure service availability, we utilize CloudFlare's services for DDoS protection and content delivery. All traffic to onetimesecret.com and its subdomains (including eu.onetimesecret.com and us.onetimesecret.com) passes through CloudFlare's infrastructure by default. Users on our Global Elite plan have the option to bypass CloudFlare if requested, though this may impact service availability during attacks.
-
 onetimesecret.com does not warrant that the Service will meet your requirements; that the Service will be uninterrupted, timely, secure, or error-free; that the information provided through the Service is accurate, reliable or correct; that any defects or errors will be corrected; that the Service will be available at any particular time or location; or that the Service is free of viruses or other harmful components. You assume full responsibility and risk of loss resulting from your downloading and/or use of files, information, content or other material obtained from the Service.
 
 ### M. Limitation of Liability
@@ -273,7 +271,7 @@ Our liability is limited whether or not we have been informed of the possibility
 
 If you have a dispute with one or more Users, you agree to release onetimesecret.com from any and all claims, demands and damages (actual and consequential) of every kind and nature, known and unknown, arising out of or in any way connected with such disputes.
 
-You agree to indemnify us, defend us, and hold us harmless from and against any and all claims, liabilities, and expenses, including attorneys’ fees, arising out of your use of the Website and the Service, including but not limited to your violation of this Agreement, provided that onetimesecret.com (1) promptly gives you written notice of the claim, demand, suit or proceeding; (2) gives you sole control of the defense and settlement of the claim, demand, suit or proceeding (provided that you may not settle any claim, demand, suit or proceeding unless the settlement unconditionally releases onetimesecret.com of all liability); and (3) provides to you all reasonable assistance, at your expense.
+You agree to indemnify us, defend us, and hold us harmless from and against any and all claims, liabilities, and expenses, including attorneys' fees, arising out of your use of the Website and the Service, including but not limited to your violation of this Agreement, provided that onetimesecret.com (1) promptly gives you written notice of the claim, demand, suit or proceeding; (2) gives you sole control of the defense and settlement of the claim, demand, suit or proceeding (provided that you may not settle any claim, demand, suit or proceeding unless the settlement unconditionally releases onetimesecret.com of all liability); and (3) provides to you all reasonable assistance, at your expense.
 
 ### O. Changes to These Terms
 **Short version:** *We want our users to be informed of important changes to our terms, but some changes aren't that important — we don't want to bother you every time we fix a typo. So while we may modify this agreement at any time, we will notify users of any changes that affect your rights and give you time to adjust to them.*
