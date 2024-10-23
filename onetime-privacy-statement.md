@@ -4,7 +4,7 @@ title: onetimesecret.com Privacy Statement
 
 Effective date: **October 22, 2024**
 
-Thanks for entrusting onetimesecret.com with your secrets. Holding onto your private information is a serious responsibility, and we want you to know how we're handling it.
+Onetimesecret.com provides a service for securely sharing sensitive information. We understand that managing private data carries significant responsibility. This policy outlines how we handle information entrusted to our service.
 
 ### The short version
 We collect your information only with your consent; we only collect the minimum amount of personal information that is necessary to fulfill the purpose of your interaction with us; we don't sell it to third parties; and we only use it as this Privacy Statement describes.
@@ -17,7 +17,7 @@ Of course, the short version doesn't tell you everything, so please read on for 
 
 If you're **just browsing the website**, we collect the same basic information that most websites collect. We use common internet technologies, such as cookies and web server logs. This is stuff we collect from everybody, whether they have an account or not.
 
-The information we collect about all visitors to our website includes the visitor's browser type, language preference, service region, and the date and time of each visitor request. We also collect potentially personally-identifying information like Internet Protocol (IP) addresses.
+The information we collect about all visitors to our website includes the visitor's browser type, language preference, preferred data center location (which you choose when accessing our service via eu.onetimesecret.com or us.onetimesecret.com), color mode (e.g. dark mode), and the date and time of each visitor request. We also collect potentially personally-identifying information like Internet Protocol (IP) addresses.
 
 ##### Why do we collect this?
 
@@ -40,7 +40,7 @@ User Personal Information does not include aggregated, non-personally identifyin
 
 ### What information onetimesecret.com does not collect
 
-We do not intentionally collect **sensitive personal information**, such as social security numbers, genetic data, health information, or religious information. Although onetimesecret.com does not request or intentionally collect any sensitive personal information, we realize that you might store this kind of information in your account, such as in a secret. If you store any sensitive personal information on our servers, you are consenting to our storage of that information on our servers, which are located in the European Union (EU) or United States (US) data centers, subject to applicable data protection laws.
+We do not intentionally collect **sensitive personal information**, such as social security numbers, genetic data, health information, or religious information. Although onetimesecret.com does not request or intentionally collect any sensitive personal information, we realize that you might store this kind of information in your account, such as in a secret. If you store any sensitive personal information on our servers, you are consenting to our storage of that information on our servers, which are located in the European Union (EU) or United States (US) data centers (accessible via eu.onetimesecret.com and us.onetimesecret.com respectively), subject to applicable data protection laws.
 
 We do not intentionally collect information that is **stored in your secret** or other free-form content inputs. Information in your secret belongs to you, and you are responsible for it, as well as for making sure that your content complies with our [Terms of Service](/info/terms/). onetimesecret.com employees do not access secret unless required to for security or maintenance, or for support reasons, with the consent of the secret owner.
 
@@ -77,29 +77,26 @@ A cookie is a small piece of text that our web server stores on your computer or
 
 #### Third-party tracking services
 
-We do not use Google Analytics or similar third party tracking services.
-
-Certain pages on our site may set other third party cookies. For example, we may embed content, such as videos, from another site that sets a cookie. While we try to minimize these third party cookies, we can't always control what cookies this third party content sets.
+While we do not use Google Analytics or similar third-party tracking services for any purpose, some embedded content from third-party providers (such as video players) may set their own cookies or similar tracking technologies. These are outside of our control and are not used for our own tracking purposes. We recommend reviewing the privacy policies of these third-party providers if you have concerns about their cookies.
 
 #### Tracking
 
 <p class="prose dark:text-gray-300">
-  The "Do Not Track" (DNT) standard, which allowed users to set a privacy preference in their browsers to avoid tracking, is no longer widely supported or used. We do not track your online browsing activity on other online services over time, and we do not permit third-party services to track your activity on our site. Because we do not share this kind of data with third-party services or permit this kind of third-party data collection on onetimesecret.com for any of our users, and we do not track our users on third-party websites ourselves, we do not need to respond differently to an individual browser's Do Not Track setting.
+We respect user privacy and do not track your online browsing activity across other online services over time. While some browsers previously offered a "Do Not Track" setting, we handle all user data with privacy in mind regardless of browser settings.
 </p>
-
 
 ### How onetimesecret.com secures your information
 
 onetimesecret.com takes all measures reasonably necessary to protect User Personal Information from unauthorized access, alteration, or destruction; maintain data accuracy; and help ensure the appropriate use of User Personal Information. We follow generally accepted industry standards to protect the personal information submitted to us, both during transmission and once we receive it.
 
-To enhance security and availability, we utilize CloudFlare's services for DDoS protection and content delivery. For users on our Global Elite plan, CloudFlare protection is optional and can be enabled upon request.
+To enhance security and availability, we utilize CloudFlare's services for DDoS protection and content delivery. For users on our dedicated service plans, additional security features including enhanced CloudFlare protection are available upon request (depending on the feature, additional charges may apply).
 
 No method of transmission, or method of electronic storage, is 100% secure. Therefore, we cannot guarantee its absolute security. For more information, see our [security disclosures](/info/security/).
 
 ### onetimesecret.com's global privacy practices
 **Information that we collect will be stored and processed in either our European Union (EU) or United States (US) data centers**, accessible via eu.onetimesecret.com and us.onetimesecret.com respectively. Your data will be stored in the region you select when creating your account, in accordance with this Privacy Statement. We understand that we have users from different countries and regions with different privacy expectations, and we try to meet those needs.
 
-We provide the same standard of privacy protection to all our users around the world, regardless of their country of origin or location, and we are proud of the levels of notice, choice, accountability, security, data integrity, access, and recourse we provide. We have appointed a Privacy Counsel and we work hard to comply with the applicable data privacy laws wherever we do business. Additionally, we require that if our vendors or affiliates have access to User Personal Information, they must comply with our privacy policies and with applicable data privacy laws, including signing data transfer agreements such as Standard Contractual Clause agreements.
+We provide the same standard of privacy protection to all our users around the world, regardless of their country of origin or location, and we are proud of the levels of notice, choice, accountability, security, data integrity, access, and recourse we provide. We work hard to comply with the applicable data privacy laws wherever we do business. Additionally, we require that if our vendors or affiliates have access to User Personal Information, they must comply with our privacy policies and with applicable data privacy laws, including signing data transfer agreements such as Standard Contractual Clause agreements.
 
 In particular:
 -	onetimesecret.com provides clear methods of unambiguous, informed consent at the time of data collection, when we do collect your personal data.
