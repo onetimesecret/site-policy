@@ -204,7 +204,9 @@ This regional data localization policy applies throughout the entire processing 
 
 a) *Billing data* (limited to payment and invoicing information) is processed by Stripe, Inc. in the United States, as listed in Schedule A. For Company Personal Data originating from EU, EEA, UK, or Swiss data subjects, this transfer is covered by Stripe's certification under the EU-US Data Privacy Framework, the UK Extension to the EU-US Data Privacy Framework, and the Swiss-US Data Privacy Framework. Where an applicable transfer mechanism is invalidated, the Parties shall cooperate to implement an alternative approved mechanism (such as EU Standard Contractual Clauses, 2021 version) without undue delay.
 
-b) *Transient edge-network TLS termination.* On the multi-tenant Services, Cloudflare (for the Processor's regional service domains) and Approximated (for customer Custom Domains on the multi-tenant paid tiers) operate global edge networks that terminate TLS connections at an edge location close to the visitor, which may be outside the destination region. The decrypted application traffic is re-encrypted for transit into the appropriate regional environment for processing. Single-tenant deployments (e.g. Global Elite) do not use these third-party edge networks; TLS is terminated on dedicated infrastructure managed by the Processor within the Company's selected region.
+b) *Transient edge-network TLS termination.* On the multi-tenant Services, Cloudflare (for the Processor's regional service domains) and Approximated (for customer Custom Domains on the multi-tenant tiers) operate global edge networks that terminate TLS connections at an edge location close to the visitor, which may be outside the destination region. The decrypted application traffic is re-encrypted for transit into the appropriate regional environment for processing. Single-tenant deployments (e.g. Global Elite) do not use these third-party edge networks; TLS is terminated on dedicated infrastructure managed by the Processor within the Company's selected region.
+
+c\) *Centralized error monitoring.* Application errors from all regional environments are captured by the Processor's self-hosted error-monitoring instance (Sentry), hosted within the European Union, as described in Section 5.3. Error reports are scrubbed of data client-side and server-side, are not intended to contain personal data (though some may be incidentally captured), are used solely for the purposes described in Sections 5.3 and 5.4, and are retained for no longer than the Operational Retention Period.
 
 12.3) not engage in automated individual decision-making, including profiling, as defined under Article 22 of the GDPR, in connection with Company Personal Data.
 
@@ -256,7 +258,7 @@ Service tier affects subprocessor availability and architecture:
 
 *Global Elite (Premium Tier):* customers receive logically dedicated environments (e.g., secrets.yourcompany.com) with isolated application stacks and database instances, though underlying cloud resources may be virtualized.
 
-*Identity Plus (Mid-Tier)*: operates on multi-tenant infrastructure (e.g., eu.onetimesecret.com) with secure compartmentalization between customers. Custom domain functionality requires third-party network infrastructure that terminates SSL/TLS connections outside the Processor's direct control, as detailed in the Network & Security category below.
+*Multi-tenant tiers (Basic, Identity Plus, Team Plus)*: operate on multi-tenant infrastructure (e.g., eu.onetimesecret.com) with secure compartmentalization between customers. Custom Domain functionality, available on all multi-tenant tiers including the free tier, requires third-party network infrastructure that terminates SSL/TLS connections outside the Processor's direct control, as detailed in the Network & Security category below.
 
 Where multiple subprocessors appear within a category, they represent alternatives unless explicitly stated as additive. Core subprocessors (those not marked optional) apply to all service tiers.
 
@@ -277,7 +279,7 @@ Where multiple subprocessors appear within a category, they represent alternativ
 |  |  |  |  |  |  |
 |----|----|----|----|----|----|
 | **Subprocessor** | **Data Location** | **Tiers** | **Optional** | **Purpose** | **Categories of Data** |
-| *Approximated* | Global edge network | Identity Plus, Team Plus | ✔ | Custom domain with TLS termination | Account info, application data, network-level web traffic data, IP addresses |
+| *Approximated* | Global edge network | All multi-tenant tiers | ✔ | Custom domain with TLS termination | Account info, application data, network-level web traffic data, IP addresses |
 | *CloudFlare* | Global | All multi-tenant tiers | ✔ | Network proxy ("Orange Cloud"), security services, and TLS termination at the edge for the Processor's regional service domains (e.g. `eu.onetimesecret.com`); not used for customer Custom Domains | Account info, application data, network-level web traffic data, IP addresses |
 | *BunnyCDN* | Global edge network | All | 𐄂 | CDN and static hosting for the Processor's public websites (`onetimesecret.com`, `onetimesecret.dev`) and documentation (`docs.onetimesecret.com`, `docs.onetimesecret.dev`); does not serve Secret Content or Account Data | Network-level web traffic data, IP addresses |
 
@@ -292,11 +294,17 @@ Where multiple subprocessors appear within a category, they represent alternativ
 
 ### Backup & Storage
 
+Offsite encrypted backups for each regional environment are stored in object storage located within that region's jurisdiction, using the storage services of the regional hosting Subprocessors listed under Infrastructure & Hosting above. Local encrypted backups reside on infrastructure within the same regional environment as the data they cover.
+
 |  |  |  |  |  |  |
 |----|----|----|----|----|----|
 | **Subprocessor** | **Data Location** | **Tiers** | **Optional** | **Purpose** | **Categories of Data** |
-| *Hetzner (Object storage)* | EU (Germany, Finland) | All | ✔ | Object storage for encrypted offsite backups | Account info, application data |
-| *AWS (S3)* | EU (Frankfurt, Ireland) | Global Elite | ✔ | S3 storage for geo-located encrypted backups | Account info, application data |
+| *Hetzner (Object storage)* | EU (Germany, Finland) or US | All | ✔ | Object storage for encrypted offsite backups (EU and US regional environments) | Account info, application data |
+| *UpCloud (Object storage)* | UK (London) | All | ✔ | Object storage for encrypted offsite backups (UK regional environment) | Account info, application data |
+| *DigitalOcean (Object storage)* | CA (Toronto) | All | ✔ | Object storage for encrypted offsite backups (CA regional environment) | Account info, application data |
+| *Catalyst Cloud (Object storage)* | NZ (Porirua) | All | ✔ | Object storage for encrypted offsite backups (NZ regional environment) | Account info, application data |
+| *AWS (S3)* | EU (Frankfurt, Ireland) | Global Elite | ✔ | S3 storage for geo-located encrypted backups (EU-region deployments) | Account info, application data |
+| *BunnyCDN (Object storage)* | EU (Germany, Sweden) | All | ✔ | Object storage for encrypted offsite backups (EU regional environments - Public Beta) | Account info, application data |
 
 ### Payment Processing
 
@@ -406,8 +414,9 @@ Backup data is encrypted using GPG with 4096-bit keys prior to storage. Encrypti
 
 ### 3. Backup Retention and Geographic Controls
 
-- Local encrypted backups are retained for seven (7) days
-- Geo-located encrypted backups are stored in AWS S3 (Frankfurt, EU) with automatic expiration after thirty (30) days
+- Local encrypted backups are retained for seven (7) days on infrastructure within the same regional environment as the data they cover
+- Offsite encrypted backups are stored in object storage within the same regional jurisdiction, as identified in Schedule A (Backup & Storage), with automatic expiration after thirty (30) days
+- For Global Elite deployments in the EU region, geo-located encrypted backups are stored in AWS S3 (Frankfurt, EU) with automatic expiration after thirty (30) days
 - Backup storage locations align with the regional data isolation policy described in Section 12 of the Principal DPA
 
 ### 4. Encryption in Transit
@@ -459,7 +468,7 @@ For the purposes of this UK Addendum:
 
 3.2) *Data Protection Laws*: References to "EU Data Protection Laws" or "GDPR" in the Principal DPA shall be interpreted to include UK Data Protection Laws where the context requires.
 
-3.3) *UK Data Storage*: All data relating to UK customers is processed and stored exclusively within UK infrastructure.
+3.3) *UK Data Storage*: All data relating to UK customers is processed and stored exclusively within UK infrastructure, subject to the limited exceptions set out in Section 12.2 of the Principal DPA.
 
 3.4) *UK Representative*: Based on careful assessment of Article 27(2) of the UK GDPR, the Processor has determined that its processing activities qualify for exemption from the requirement to appoint a UK representative due to:
 
