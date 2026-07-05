@@ -20,8 +20,8 @@ meta:
 # (Handoff Spec §7.2) before publishing.
 subprocessors:
   - name: Hetzner Online GmbH
-    purpose: Computing resources for internal infrastructure, single-tenant and multi-tenant hosting; object storage for encrypted offsite backups.
-    location: EU (Germany, Finland)
+    purpose: Computing resources for internal infrastructure, single-tenant and multi-tenant hosting; object storage for encrypted offsite backups (EU and US regional environments).
+    location: EU (Germany, Finland) or US
     since: "TBD"
     core: true
     note: ISO 27001:2022
@@ -43,11 +43,11 @@ subprocessors:
     core: true
     note: EU-US Data Privacy Framework certified
   - name: Approximated, Inc.
-    purpose: Custom-domain TLS termination on multi-tenant tiers (Identity Plus, Team Plus).
+    purpose: Custom-domain TLS termination on multi-tenant tiers (all tiers with Custom Domains, including the free tier).
     location: Global edge network (US entity)
     since: "TBD"
   - name: UpCloud Ltd
-    purpose: Alternative computing resources for single-tenant and multi-tenant hosting.
+    purpose: Alternative computing resources for single-tenant and multi-tenant hosting; in-region object storage for encrypted offsite backups (UK regional environment).
     location: UK (London) or EU (Helsinki, Amsterdam, Frankfurt)
     since: "TBD"
     note: ISO 27001:2022, SOC 2 Type II, CISPE Code of Conduct member
@@ -56,16 +56,16 @@ subprocessors:
     location: UK (London) or EU (Netherlands)
     since: "TBD"
   - name: DigitalOcean, LLC
-    purpose: Alternative container hosting, CI/CD services, managed databases.
+    purpose: Alternative container hosting, CI/CD services, managed databases; in-region object storage for encrypted offsite backups (CA regional environment).
     location: EU or CA (Toronto) regions only
     since: "TBD"
   - name: Catalyst Cloud Limited
-    purpose: Computing resources for the New Zealand multi-tenant environment.
+    purpose: Computing resources for the New Zealand multi-tenant environment; in-region object storage for encrypted offsite backups (NZ regional environment).
     location: NZ (Porirua)
     since: "TBD"
     note: New Zealand holds an EU adequacy decision
   - name: Amazon Web Services, Inc.
-    purpose: Alternative transactional email (SES, EU region); S3 geo-located encrypted backups for Global Elite deployments.
+    purpose: Alternative transactional email (SES, EU region); S3 geo-located encrypted backups for EU-region Global Elite deployments.
     location: EU regions (SES Frankfurt/Ireland for S3)
     since: "TBD"
   - name: Lettermint B.V.

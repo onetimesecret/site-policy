@@ -27,7 +27,10 @@ document_references:
     geo_backups_global_elite:
       value: 30 days
       line: 102
-      location: AWS S3 Frankfurt
+      location: AWS S3 Frankfurt (EU-region Global Elite deployments only)
+    offsite_backups_regional:
+      value: 30 days
+      note: In-region object storage per regional hosting provider (DPA Schedule A, Backup & Storage)
     backup_retention_period:
       value: 30 days
       line: 106
