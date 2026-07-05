@@ -4,12 +4,10 @@ name: trust-site
 # repository root. Node is pinned via .nvmrc (v24) so the build is reproducible;
 # pnpm is pinned to the v9 line to match the lockfile (lockfileVersion 9.0).
 #
-# Build-only for now: every run produces the dist/ artifact. Publishing is
-# deferred until the trust.onetimesecret.com subdomain is claimed and the
-# production host (expected: BunnyCDN, matching the other public sites) is
-# wired. To publish, add a job that downloads the trust-site-dist artifact and
-# uploads dist/ to BunnyCDN Storage using repo secrets for the storage-zone and
-# API key.
+# This is the PR/branch build check (every run produces the dist/ artifact).
+# Publishing to BunnyCDN lives in deploy.yml — currently workflow_dispatch only,
+# activated by uncommenting its push block once the subdomain, Bunny Pull Zone,
+# and the production GitHub Environment secrets exist.
 
 on:
   push:
