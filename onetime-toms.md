@@ -52,7 +52,7 @@ This document does not apply to self-hosted deployments of the Processor's open-
 - Application and data tiers are architecturally separated: application servers hold the system-level secret required for key derivation; database servers store encrypted Secret Content but do not hold or have access to that secret.
 - The object class and identifier are bound as Additional Authenticated Data (AAD), ensuring ciphertext cannot be transplanted between records.
 
-*Organizational:* Regional data isolation policy (DPA §12): Company Personal Data collected within a regional environment is not transferred to infrastructure outside that region, with the two limited exceptions set out in DPA §12.2: Stripe billing data (covered by the EU-US, UK Extension, and Swiss-US Data Privacy Frameworks, with Standard Contractual Clauses retained as a fallback) and transient edge-network TLS termination on the multi-tenant tiers, with traffic re-encrypted into the regional environment.
+*Organizational:* Regional data isolation policy (DPA §12): Company Personal Data collected within a regional environment is not transferred to infrastructure outside that region, with the limited exceptions set out in DPA §12.2: Stripe billing data (covered by the EU-US, UK Extension, and Swiss-US Data Privacy Frameworks, with Standard Contractual Clauses retained as a fallback); transient edge-network TLS termination on the multi-tenant tiers, with traffic re-encrypted into the regional environment; and centralized error monitoring on a self-hosted, EU-hosted Sentry instance with client- and server-side data scrubbing.
 
 ### 1.4 Pseudonymization and Encryption (Art. 32(1)(a); Art. 25(1))
 
@@ -101,7 +101,7 @@ This document does not apply to self-hosted deployments of the Processor's open-
 *Responsibility: Shared.*
 
 *Technical:*
-- Local encrypted backups retained for seven (7) days; geo-located encrypted backups (Global Elite) stored in AWS S3 (Frankfurt, EU) with automatic expiration after thirty (30) days. Both tiers fall within the Backup Retention Period defined in DPA §1.17.
+- Local encrypted backups retained for seven (7) days on infrastructure within the same regional environment; offsite encrypted backups stored in object storage within the same regional jurisdiction (per Schedule A of the DPA, Backup & Storage) with automatic expiration after thirty (30) days. Global Elite deployments in the EU region additionally use geo-located encrypted backups in AWS S3 (Frankfurt, EU). All backup tiers fall within the Backup Retention Period defined in DPA §1.17.
 - Backup encryption uses an asymmetric scheme so that compromise of production systems does not expose backup contents.
 - Continuous system hardening against known attack classes, including denial-of-service.
 
