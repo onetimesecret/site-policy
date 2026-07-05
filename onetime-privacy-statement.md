@@ -104,11 +104,11 @@ We share Account Data, and in some cases encrypted Secret Content, with a small 
 | --- | --- | --- |
 | Cloudflare, Inc. | DDoS protection on our regional service domains (e.g. `eu.onetimesecret.com`, `ca.onetimesecret.com`), which are the entry points for free usage | Global edge network |
 | Stripe, Inc. | Payment processing for paid plans | United States (EU-US Data Privacy Framework certified) |
-| Approximated, Inc. | SSL termination for customer Custom Domains on our multi-tenant paid tiers (Identity Plus and Team Plus) | Global edge network |
+| Approximated, Inc. | SSL termination for customer Custom Domains on our multi-tenant tiers | Global edge network |
 | Transactional email providers | Delivery of account, notification, and security emails | EU |
 | Regional hosting providers | Application and data hosting within each region | See "Where your data is processed", below |
 
-Cloudflare provides DDoS protection on the regional service domains (the entry points for free usage). Customer Custom Domains on Identity Plus and Team Plus are served via Approximated and are not routed through Cloudflare by us. Depending on your region and plan, we may offer alternatives to this TLS termination arrangement for Custom Domains; contact support to inquire, including if you run into TLS certificate complications with your Custom Domain. The customer's own ability to place their Custom Domain behind an edge network of their choice is described in [Section E.1 of the Terms of Service](https://onetimesecret.com/terms#1-custom-domains).
+Cloudflare provides DDoS protection on the regional service domains (the entry points for free usage). Customer Custom Domains on our multi-tenant tiers (including the free tier, which supports one Custom Domain) are served via Approximated and are not routed through Cloudflare by us. Depending on your region and plan, we may offer alternatives to this TLS termination arrangement for Custom Domains; contact support to inquire, including if you run into TLS certificate complications with your Custom Domain. The customer's own ability to place their Custom Domain behind an edge network of their choice is described in [Section E.1 of the Terms of Service](https://onetimesecret.com/terms#1-custom-domains).
 
 Hosting providers vary by region (see "Where your data is processed" below for the per-region hosting provider). We maintain a current, dated list of subprocessors (including legal entity, address, location, purpose, and categories of data processed) in our Data Processing Agreement at [onetimesecret.com/dpa](https://onetimesecret.com/dpa). The list is published from our public trust centre (a git-backed repository, currently our [site-policy repository](https://github.com/onetimesecret/site-policy)), so every change is dated and the full history is reviewable.
 
@@ -172,12 +172,13 @@ We add further regions from time to time. The authoritative subprocessor list at
 
 When you create an account, you choose the regional environment in which your account lives. Account Data and Secret Content created in a given jurisdiction remain in that region's infrastructure throughout their lifecycle, including encrypted backups. We do not transfer Account Data or Secret Content between regions.
 
-There are two narrow exceptions, both inherent to operating the service:
+There are three narrow exceptions, all inherent to operating the service:
 
 - **Payment processing:** Stripe processes billing data in the United States under the EU-US Data Privacy Framework and equivalent transfer mechanisms for other regions. This applies only to billing data; Account Data outside the billing context, and Secret Content, are not transferred to Stripe.
-- **Edge networks:** Cloudflare (for our regional domains) and Approximated (for Custom Domains on Identity Plus and Team Plus) operate global edge networks that terminate TLS connections at an edge location close to the visitor, which may be outside the destination region. The decrypted application traffic is then re-encrypted for transit into the appropriate regional environment for processing. Single tenant deployments (e.g. Global Elite) do not use these third-party edge networks; TLS is terminated on dedicated infrastructure managed by us within the customer's selected region.
+- **Edge networks:** Cloudflare (for our regional domains) and Approximated (for Custom Domains on our multi-tenant tiers) operate global edge networks that terminate TLS connections at an edge location close to the visitor, which may be outside the destination region. The decrypted application traffic is then re-encrypted for transit into the appropriate regional environment for processing. Single tenant deployments (e.g. Global Elite) do not use these third-party edge networks; TLS is terminated on dedicated infrastructure managed by us within the customer's selected region.
+- **Error monitoring:** application errors from all regions are captured by our self-hosted Sentry instance, which is hosted within the European Union. Error reports are scrubbed of data client-side and server-side, are not intended to contain personal data (though some may be incidentally captured), are used solely for error resolution, and are kept for at most 30 days.
 
-Other than the two exceptions described above, we do not transfer data outside the jurisdiction in which it was collected.
+Other than the exceptions described above, we do not transfer data outside the jurisdiction in which it was collected.
 
 ## Your rights and how to raise concerns
 
