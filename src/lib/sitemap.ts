@@ -15,6 +15,11 @@
 //               share the link with one reviewer or customer), but omitted from
 //               nav, the overview index, and the sitemap.
 //   published — fully live: built, in the nav, and on the overview index.
+//
+// The build reconciles what it emitted against this registry and fails if they
+// disagree (a live section with no page, a page no section claims, or a draft
+// that wasn't pruned), so this file cannot silently drift from the deployed
+// site. See the trust:reconcile-and-prune integration in astro.config.mjs.
 
 export type SectionStatus = 'draft' | 'unlisted' | 'published';
 
@@ -45,13 +50,12 @@ export const sections: Section[] = [
   { key: 'audit',     href: '/your-audit',    navLabel: 'Your audit',    status: 'published', indexTitle: 'Citing Onetime Secret in your audit' },
 ];
 
-const byKey = new Map(sections.map((s) => [s.key, s]));
-
-export function getSection(key: SectionKey): Section {
-  const section = byKey.get(key);
-  if (!section) throw new Error(`Unknown section: ${key}`);
-  return section;
-}
+// Routes the build emits that are not navigable sections — data endpoints and
+// the like. (Files served from /public, e.g. security.txt, are copied assets,
+// not routes, and never appear in the build's route table.) The reconciler
+// treats any emitted route not covered by a section OR this list as an orphan
+// and fails the build, so a page can never reach the trust site unaccounted-for.
+export const nonSectionRoutes: readonly string[] = ['/trust.yaml'];
 
 const isBuilt = (s: Section) => s.status !== 'draft';
 const isListed = (s: Section) => s.status === 'published';
@@ -60,7 +64,12 @@ const isListed = (s: Section) => s.status === 'published';
 export const navSections = sections.filter(isListed);
 export const indexSections = sections.filter((s) => isListed(s) && s.indexTitle);
 
+// Sections that must exist in the build output (published or unlisted). The
+// reconciler asserts each one actually emitted a page, so the nav and index can
+// never link to a URL that 404s.
+export const builtSections = sections.filter(isBuilt);
+
 // Draft sections are rendered during the build and then removed, so the
-// deployed site returns a real 404 for them. Consumed by the prune integration
-// in astro.config.mjs. `unlisted` deliberately stays built and reachable.
+// deployed site returns a real 404 for them. Consumed by the prune step in
+// astro.config.mjs. `unlisted` deliberately stays built and reachable.
 export const prunedSections = sections.filter((s) => !isBuilt(s));
