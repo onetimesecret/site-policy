@@ -1,18 +1,28 @@
 ---
 import TrustLayout from '../layouts/TrustLayout.astro';
 import { trust } from '../lib/trust';
+import { indexSections, type SectionKey } from '../lib/sitemap';
 
 const publicDocs = trust.documents.filter((d) => d.access === 'public').length;
 const requestDocs = trust.documents.filter((d) => d.access === 'request').length;
 const lastChange = trust.subprocessorChangelog[0]?.date ?? trust.meta.updatedAt;
 
-const indexRows = [
-  { href: '/how-it-works', title: 'How it works — secrets, architecture, data flow ↓', meta: `updated ${trust.meta.updatedAt}` },
-  { href: '/subprocessors', title: 'Subprocessors & change history', meta: `changed ${lastChange}` },
-  { href: '/documents', title: 'Documents — policy, DPA, HECVAT', meta: `${publicDocs} public · ${requestDocs} on request` },
-  { href: '/assurance', title: 'Assurance without certification', meta: 'our SOC 2 position' },
-  { href: '/your-audit', title: 'Citing Onetime Secret in your audit', meta: 'SOC 2 · ISO 27001 · HECVAT' },
-];
+// Which rows appear (and in what order) is the registry's call — only
+// `published` sections with an indexTitle show here. The right-hand meta is
+// computed from live trust data, keyed by section.
+const rowMeta: Partial<Record<SectionKey, string>> = {
+  how: `updated ${trust.meta.updatedAt}`,
+  subs: `changed ${lastChange}`,
+  docs: `${publicDocs} public · ${requestDocs} on request`,
+  assurance: 'our SOC 2 position',
+  audit: 'SOC 2 · ISO 27001 · HECVAT',
+};
+
+const indexRows = indexSections.map((s) => ({
+  href: s.href,
+  title: s.indexTitle!,
+  meta: rowMeta[s.key] ?? '',
+}));
 ---
 
 <TrustLayout
