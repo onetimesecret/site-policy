@@ -63,10 +63,16 @@ function reconcileAndPrune() {
         // a page, or the nav/index would point at a URL that 404s.
         for (const section of builtSections) {
           if (!emitted.has(section.href)) {
+            // Point at the likely source file. The root is index.astro, not
+            // the "src/pages/.astro" a naive join of href would produce.
+            const pageSrc =
+              section.href === '/'
+                ? 'src/pages/index.astro'
+                : `src/pages${section.href}.astro`;
             throw new Error(
               `[trust:reconcile] section "${section.key}" is ${section.status} ` +
-                `but emitted no page (${section.href}). Create ` +
-                `src/pages${section.href}.astro, or mark the section draft.`,
+                `but emitted no page (${section.href}). Create ${pageSrc}, ` +
+                `or mark the section draft.`,
             );
           }
         }
