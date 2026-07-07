@@ -11,24 +11,20 @@ import '@fontsource/libre-franklin/700.css';
 import '@fontsource/ibm-plex-mono/400.css';
 import '@fontsource/ibm-plex-mono/500.css';
 import { trust } from '../lib/trust';
+import { navSections, type SectionKey } from '../lib/sitemap';
 
 interface Props {
   title: string;
   description: string;
-  active: 'overview' | 'how' | 'subs' | 'docs' | 'assurance' | 'faq' | 'audit';
+  active: SectionKey;
 }
 
 const { title, description, active } = Astro.props;
 
-const navItems = [
-  { key: 'overview', label: 'Overview', href: '/' },
-  { key: 'how', label: 'How it works', href: '/how-it-works' },
-  { key: 'subs', label: 'Subprocessors', href: '/subprocessors' },
-  { key: 'docs', label: 'Documents', href: '/documents' },
-  { key: 'assurance', label: 'Assurance', href: '/assurance' },
-  { key: 'faq', label: 'FAQ', href: '/faq' },
-  { key: 'audit', label: 'Your audit', href: '/your-audit' },
-] as const;
+// Nav is derived from the section registry — only `published` sections appear
+// (see src/lib/sitemap.ts). An `unlisted` page still renders when visited by
+// direct URL; it just never shows up here.
+const navItems = navSections.map((s) => ({ key: s.key, label: s.navLabel, href: s.href }));
 
 const { email, sla, pgp } = trust.meta.contacts;
 ---
